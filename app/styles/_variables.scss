@@ -1,0 +1,67 @@
+// Variables
+
+//  1. Colors
+//  2. Spacing
+//  3. Buttons
+//  4. Grid
+//  5. Typography
+//  6. Global
+
+
+// 1. Colors
+// ==========================================================================
+
+$white: #fff !default;
+$black: #000 !default;
+
+
+// 2. Spacing
+// ==========================================================================
+
+$element-spacing-small: 1rem !default;
+$element-spacing-medium: 2rem !default;
+
+
+// 3. Buttons
+// ==========================================================================
+
+
+// 4. Grid
+// ==========================================================================
+
+$grid-breakpoints:
+  small 48em 46rem,
+  medium 62em 61rem,
+  large 75em 71rem !default;
+
+$grid-columns: 12 !default;
+$grid-max-width: 1200px !default;
+$gutter-width: $element-spacing-small;
+$element-outer-margin: $element-spacing-medium;
+
+
+// 5. Typography
+// ==========================================================================
+$font-family-base: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+$font-size-base-px: 16px !default;
+$font-size-base: 1rem !default; // Assumes the browser default, typically `16px`
+
+
+// Header Styles
+$h1-font-size: $font-size-base * 2.625 !default;
+$h2-font-size: $font-size-base * 2.0625 !default;
+$h3-font-size: $font-size-base * 1.625 !default;
+$h4-font-size: $font-size-base * 1.25 !default;
+$h5-font-size: $font-size-base !default;
+$h6-font-size: $font-size-base * 0.8125 !default;
+
+// Font size varients
+$font-size-large: $h3-font-size;
+$font-size-medium: $h4-font-size;
+$font-size-small: $h6-font-size;
+
+// Line height
+$line-height-base: 1.5 !default;
+
+// 6. Global
+// ==========================================================================

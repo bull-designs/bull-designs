@@ -1,0 +1,133 @@
+// Default styles
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+ box-sizing: inherit;
+}
+
+body {
+  color: $black;
+  font-family: $font-family-base;
+  font-size: $font-size-base;
+  font-weight: normal;
+  line-height: $line-height-base;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: $font-family-base;
+}
+
+// Anchor tag
+a {
+  text-decoration: none;
+}
+
+// Header Styles
+h1,
+.h1 {
+  font-size: $h1-font-size;
+  // line-height: $line-height-base * 2.625;
+}
+
+h2,
+.h2 {
+  font-size: $h2-font-size;
+  // line-height: $line-height-base * 2.0625;
+}
+
+h3,
+.h3 {
+  font-size: $h3-font-size;
+  // line-height: $line-height-base * 1.625;
+}
+
+h4,
+.h4 {
+  font-size: $h4-font-size;
+  // line-height: $line-height-base * 1.25;
+}
+
+h5,
+.h5 {
+  font-size: $h5-font-size;
+  // line-height: $line-height-base;
+}
+
+h6,
+.h6 {
+  font-size: $h6-font-size;
+  // line-height: $line-height-base * 0.8125;
+}
+
+// clearfix
+.clearfix {
+  clear: both;
+}
+
+.hide {
+  display: none !important;
+}
+
+.float-left {
+  float: left !important;
+}
+
+.float-right {
+  float: right !important;
+}
+
+.left-align {
+  text-align: left;
+}
+
+.right-align {
+  text-align: right
+}
+
+.center-align {
+  text-align: center;
+}
+
+.circle {
+  border-radius: 50%;
+}
+
+.no-padding {
+  padding: 0 !important;
+}
+
+.no-margin {
+  margin: 0 !important;
+}
+
+
+// Text Styles
+small {
+  font-size: 75%;
+}
+
+em {
+  font-style: italic;
+}
+
+strong {
+  font-weight: 500;
+}
+
+.light {
+  font-weight: 300;
+}
+
+.thin {
+  font-weight: 200;
+}
+
+

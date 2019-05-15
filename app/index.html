@@ -1,0 +1,750 @@
+<!doctype html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>bull</title>
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="stylesheet" href="demo.css">
+    <!-- Place favicon.ico in the root directory -->
+    <!-- build:css styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+    <!-- build:js scripts/modernizr.js -->
+    <script src="scripts/modernizr.js"></script>
+    <!-- endbuild -->
+  </head>
+  <body>
+    <!--[if IE]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <!-- Grid -->
+    <header class="home u-cf bg">
+      <div class="container container-fluid">
+        <div class="row center-xsmall top">
+          <div class="grid-xsmall-12"><a href="index.html"><img src="images/logo-ico-black.png"/></a></div>
+        </div>
+      </div>
+      <div class="container-fluid hero">
+        <div class="row center-xsmall middle-xsmall">
+          <div class="grid-xsmall-10">
+            <h1>A modern free responsive, <br /> open source SCSS framework based on Flexbox</h1>
+            <div>
+              <a href="javascript;" class="button primary">Download Zip</a>
+              <a href="javascript;" class="button primary">Github Repository</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="container container-fluid">
+      <main>
+        <section class="page-section">
+          <h2>Responsive</h2>
+          <p>Responsive modifiers enable specifying different column sizes, offsets, alignment and distribution at xsmall, small, medium & large viewport widths.</p>
+          <div class="row">
+            <div class="grid-xsmall-12 grid-small-3 grid-medium-2 grid-large-1">
+              <div class="box-row"></div>
+            </div>
+            <div class="grid-xsmall-6 grid-small-6 grid-medium-8 grid-large-10">
+              <div class="box-row"></div>
+            </div>
+            <div class="grid-xsmall-6 grid-small-3 grid-medium-2 grid-large-1">
+              <div class="box-row"></div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="grid-xsmall-12 grid-small-3 grid-medium-2 grid-large-1">
+              <div class="box-row"></div>
+            </div>
+            <div class="grid-xsmall-12 grid-small-9 grid-medium-10 grid-large-11">
+              <div class="box-row"></div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="grid-xsmall-10 grid-small-6 grid-medium-8 grid-large-10">
+              <div class="box-row"></div>
+            </div>
+            <div class="grid-xsmall-2 grid-small-6 grid-medium-4 grid-large-2">
+              <div class="box-row"></div>
+            </div>
+          </div>
+          <pre class="prettyprint">
+            <code class="lang-html">
+              &lt;div class=&quot;row&quot;&gt;
+                &lt;div class=&quot;grid-xsmall-12
+                            grid-small-8
+                            grid-medium-6
+                            grid-large-4&quot;&gt;
+                    &lt;div class=&quot;box&quot;&gt;Responsive&lt;/div&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            </code>
+          </pre>
+        </section>
+
+        <section class="page-section"><br/>
+          <h2>Fluid</h2>
+          <p>Percent based widths allow fluid resizing of columns and rows.</p>
+          <div class="row">
+            <div class="grid-xsmall-12">
+              <div class="box-row"></div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="grid-xsmall-1">
+              <div class="box-row"></div>
+            </div>
+            <div class="grid-xsmall-11">
+              <div class="box-row"></div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="grid-xsmall-2">
+              <div class="box-row"></div>
+            </div>
+            <div class="grid-xsmall-10">
+              <div class="box-row"></div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="grid-xsmall-3">
+              <div class="box-row"></div>
+            </div>
+            <div class="grid-xsmall-9">
+              <div class="box-row"></div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="grid-xsmall-4">
+              <div class="box-row"></div>
+            </div>
+            <div class="grid-xsmall-8">
+              <div class="box-row"></div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="grid-xsmall-5">
+              <div class="box-row"></div>
+            </div>
+            <div class="grid-xsmall-7">
+              <div class="box-row"></div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="grid-xsmall-6">
+              <div class="box-row"></div>
+            </div>
+            <div class="grid-xsmall-6">
+              <div class="box-row"></div>
+            </div>
+          </div>
+        </section>
+
+        <section class="page-section">
+          <h2>Simple Syntax</h2>
+          <p>All you need to remember is row, column, content.</p>
+          <pre class="prettyprint">
+            <code class="lang-html">
+              &lt;div class=&quot;row&quot;&gt;
+                &lt;div class=&quot;grid-xsmall-12&quot;&gt;
+                  &lt;div class=&quot;box&quot;&gt;12&lt;/div&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            </code>
+          </pre>
+        </section>
+
+        <section class="page-section">
+          <h2>Offsets</h2>
+          <p>Offset a column</p>
+          <div class="row">
+            <div class="grid-xsmall-offset-11 grid-xsmall-1">
+              <div class="box-row"></div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="grid-xsmall-offset-10 grid-xsmall-2">
+              <div class="box-row"></div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="grid-xsmall-offset-9 grid-xsmall-3">
+              <div class="box-row"></div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="grid-xsmall-offset-8 grid-xsmall-4">
+              <div class="box-row"></div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="grid-xsmall-offset-7 grid-xsmall-5">
+              <div class="box-row"></div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="grid-xsmall-offset-6 grid-xsmall-6">
+              <div class="box-row"></div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="grid-xsmall-offset-5 grid-xsmall-7">
+              <div class="box-row"></div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="grid-xsmall-offset-4 grid-xsmall-8">
+              <div class="box-row"></div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="grid-xsmall-offset-3 grid-xsmall-9">
+              <div class="box-row"></div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="grid-xsmall-offset-2 grid-xsmall-10">
+              <div class="box-row"></div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="grid-xsmall-offset-1 grid-xsmall-11">
+              <div class="box-row"></div>
+            </div>
+          </div>
+          <pre class="prettyprint">
+            <code class="lang-html">
+              &lt;div class=&quot;row&quot;&gt;
+                &lt;div class=&quot;grid-xsmall-offset-3 grid-xsmall-9&quot;&gt;
+                  &lt;div class=&quot;box&quot;&gt;offset&lt;/div&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            </code>
+          </pre>
+        </section>
+
+        <section class="page-section">
+          <h2>Auto Width</h2>
+          <p>Add any number of auto sizing columns to a row. Let the grid figure it out.</p>
+          <div class="row">
+            <div class="grid-xsmall">
+              <div class="box-row"></div>
+            </div>
+            <div class="grid-xsmall">
+              <div class="box-row"></div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="grid-xsmall">
+              <div class="box-row"></div>
+            </div>
+            <div class="grid-xsmall">
+              <div class="box-row"></div>
+            </div>
+            <div class="grid-xsmall">
+              <div class="box-row"></div>
+            </div>
+          </div>
+
+          <pre class="prettyprint">
+            <code class="lang-html">
+              &lt;div class=&quot;row&quot;&gt;
+                &lt;div class=&quot;grid-xsmall&quot;&gt;
+                  &lt;div class=&quot;box&quot;&gt;auto&lt;/div&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            </code>
+          </pre>
+        </section>
+
+        <section class="page-section">
+          <h2>Nested Grids</h2>
+          <p>Nest grids inside grids inside grids.</p>
+          <div class="row">
+            <div class="grid-xsmall-7">
+              <div class="box box-container">
+                <div class="row">
+                  <div class="grid-xsmall-9">
+                    <div class="box-first box-container">
+                      <div class="row">
+                        <div class="grid-xsmall-4">
+                          <div class="box-nested"></div>
+                        </div>
+                        <div class="grid-xsmall-8">
+                          <div class="box-nested"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="grid-xsmall-3">
+                    <div class="box-first box-container">
+                      <div class="row">
+                        <div class="grid-xsmall">
+                          <div class="box-nested"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="grid-xsmall-5">
+              <div class="box box-container">
+                <div class="row">
+                  <div class="grid-xsmall-12">
+                    <div class="box-first box-container">
+                      <div class="row">
+                        <div class="grid-xsmall-6">
+                          <div class="box-nested"></div>
+                        </div>
+                        <div class="grid-xsmall-6">
+                          <div class="box-nested"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <pre class="prettyprint">
+            <code class="lang-html">
+              &lt;div class=&quot;row&quot;&gt;
+                &lt;div class=&quot;grid-xsmall&quot;&gt;
+                  &lt;div class=&quot;box&quot;&gt;auto&lt;/div&gt;
+                    &lt;div class=&quot;row&quot;&gt;
+                      &lt;div class=&quot;grid-xsmall&quot;&gt;
+                        &lt;div class=&quot;box&quot;&gt;auto&lt;/div&gt;
+                      &lt;/div&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            </code>
+          </pre>
+        </section>
+
+        <section class="page-section">
+          <h2>Alignment</h2>
+          <p>Add classes to align elements to the start or end of a row as well as the top, bottom, or center of a column</p>
+          <h3>.start-</h3>
+          <div class="row">
+            <div class="grid-xsmall-12">
+              <div class="box box-container">
+                <div class="row start-xsmall">
+                  <div class="grid-xsmall-6">
+                    <div class="box-nested"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <pre class="prettyprint">
+            <code class="lang-html">
+              &lt;div class=&quot;row start-xsmall&quot;&gt;
+                &lt;div class=&quot;grid-xsmall-6&quot;&gt;
+                  &lt;div class=&quot;box&quot;&gt;
+                    start
+                  &lt;/div&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            </code>
+          </pre>
+
+          <h3>.center-</h3>
+          <div class="row">
+            <div class="grid-xsmall-12">
+              <div class="box box-container">
+                <div class="row center-xsmall">
+                  <div class="grid-xsmall-6">
+                    <div class="box-nested"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <pre class="prettyprint">
+            <code class="lang-html">
+              &lt;div class=&quot;row center-xsmall&quot;&gt;
+                &lt;div class=&quot;grid-xsmall-6&quot;&gt;
+                  &lt;div class=&quot;box&quot;&gt;
+                    center
+                  &lt;/div&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            </code>
+          </pre>
+
+          <h3>.end-</h3>
+          <div class="row">
+            <div class="grid-xsmall-12">
+              <div class="box box-container">
+                <div class="row end-xsmall">
+                  <div class="grid-xsmall-6">
+                    <div class="box-nested"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <pre class="prettyprint">
+            <code class="lang-html">
+              &lt;div class=&quot;row end-xsmall&quot;&gt;
+                &lt;div class=&quot;grid-xsmall-6&quot;&gt;
+                  &lt;div class=&quot;box&quot;&gt;
+                    end
+                  &lt;/div&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            </code>
+          </pre>
+
+          <p>Here is an example of using the modifiers in conjunction to acheive different alignment at different viewport sizes.</p>
+          <div class="row">
+            <div class="grid-xsmall-12">
+              <div class="box box-container">
+                <div class="row center-xsmall end-small start-large">
+                  <div class="grid-xsmall-6">
+                    <div class="box-nested"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <h4>Example</h4>
+          <pre class="prettyprint">
+            <code class="lang-html">
+              &lt;div class=&quot;row center-xsmall end-small start-large&quot;&gt;
+                &lt;div class=&quot;grid-xsmall-6&quot;&gt;
+                  &lt;div class=&quot;box&quot;&gt;
+                    All together now
+                  &lt;/div&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            </code>
+          </pre>
+
+          <h3>.top-</h3>
+          <div class="row top-xsmall">
+            <div class="grid-xsmall-6">
+              <div class="box-large"></div>
+            </div>
+            <div class="grid-xsmall-6">
+              <div class="box"></div>
+            </div>
+          </div>
+
+          <pre class="prettyprint">
+            <code class="lang-html">
+              &lt;div class=&quot;row top-xsmall&quot;&gt;
+                &lt;div class=&quot;grid-xsmall-6&quot;&gt;
+                  &lt;div class=&quot;box&quot;&gt;
+                    top
+                  &lt;/div&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            </code>
+          </pre>
+
+          <h3>.middle-</h3>
+          <div class="row middle-xsmall">
+            <div class="grid-xsmall-6">
+              <div class="box-large"></div>
+            </div>
+            <div class="grid-xsmall-6">
+              <div class="box"></div>
+            </div>
+          </div>
+
+          <pre class="prettyprint">
+            <code class="lang-html">
+              &lt;div class=&quot;row middle-xsmall&quot;&gt;
+                &lt;div class=&quot;grid-xsmall-6&quot;&gt;
+                  &lt;div class=&quot;box&quot;&gt;
+                    middle
+                  &lt;/div&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            </code>
+          </pre>
+
+          <h3>.bottom-</h3>
+          <div class="row bottom-xsmall">
+            <div class="grid-xsmall-6">
+              <div class="box-large"></div>
+            </div>
+            <div class="grid-xsmall-6">
+              <div class="box"></div>
+            </div>
+          </div>
+
+          <pre class="prettyprint">
+            <code class="lang-html">
+              &lt;div class=&quot;row bottom-xsmall&quot;&gt;
+                &lt;div class=&quot;grid-xsmall-6&quot;&gt;
+                  &lt;div class=&quot;box&quot;&gt;
+                    bottom
+                  &lt;/div&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            </code>
+          </pre>
+        </section>
+
+        <section class="page-section">
+          <h2>Distribution</h2>
+          <p>Add classes to distribute the contents of a row or column.</p>
+          <h3>.around-</h3>
+          <div class="row">
+            <div class="grid-xsmall-12">
+              <div class="box box-container">
+                <div class="row around-xsmall">
+                  <div class="grid-xsmall-2">
+                    <div class="box-nested"></div>
+                  </div>
+                  <div class="grid-xsmall-2">
+                    <div class="box-nested"></div>
+                  </div>
+                  <div class="grid-xsmall-2">
+                    <div class="box-nested"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <pre class="prettyprint">
+            <code class="lang-html">
+              &lt;div class=&quot;row around-xsmall&quot;&gt;
+                &lt;div class=&quot;grid-xsmall-2&quot;&gt;
+                  &lt;div class=&quot;box&quot;&gt;
+                      around
+                  &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;grid-xsmall-2&quot;&gt;
+                  &lt;div class=&quot;box&quot;&gt;
+                    around
+                  &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;grid-xsmall-2&quot;&gt;
+                  &lt;div class=&quot;box&quot;&gt;
+                    around
+                  &lt;/div&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            </code>
+          </pre>
+
+          <h3>.between-</h3>
+          <div class="row">
+            <div class="grid-xsmall-12">
+              <div class="box box-container">
+                <div class="row between-xsmall">
+                  <div class="grid-xsmall-2">
+                    <div class="box-nested"></div>
+                  </div>
+                  <div class="grid-xsmall-2">
+                    <div class="box-nested"></div>
+                  </div>
+                  <div class="grid-xsmall-2">
+                    <div class="box-nested"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <pre class="prettyprint">
+            <code class="lang-html">
+              &lt;div class=&quot;row between-xsmall&quot;&gt;
+                &lt;div class=&quot;grid-xsmall-2&quot;&gt;
+                  &lt;div class=&quot;box&quot;&gt;
+                    between
+                  &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;grid-xsmall-2&quot;&gt;
+                  &lt;div class=&quot;box&quot;&gt;
+                    between
+                  &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;grid-xsmall-2&quot;&gt;
+                  &lt;div class=&quot;box&quot;&gt;
+                    between
+                  &lt;/div&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            </code>
+          </pre>
+        </section>
+
+        <section class="page-section">
+          <h2>Reordering</h2>
+          <p>Add classes to reorder columns.</p>
+          <h3>.first-</h3>
+          <div class="row">
+            <div class="grid-xsmall-12">
+              <div class="box box-container">
+                <div class="row">
+                  <div class="grid-xsmall-2">
+                    <div class="box-first">1</div>
+                  </div>
+                  <div class="grid-xsmall-2">
+                    <div class="box-first">2</div>
+                  </div>
+                  <div class="grid-xsmall-2">
+                    <div class="box-first">3</div>
+                  </div>
+                  <div class="grid-xsmall-2">
+                    <div class="box-first">4</div>
+                  </div>
+                  <div class="grid-xsmall-2">
+                    <div class="box-first">5</div>
+                  </div>
+                  <div class="grid-xsmall-2 first-xsmall">
+                    <div class="box-nested">6</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <pre class="prettyprint">
+            <code class="lang-html">
+              &lt;div class=&quot;row&quot;&gt;
+                &lt;div class=&quot;grid-xsmall-2&quot;&gt;
+                  &lt;div class=&quot;box&quot;&gt;
+                    1
+                  &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;grid-xsmall-2&quot;&gt;
+                  &lt;div class=&quot;box&quot;&gt;
+                    2
+                  &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;grid-xsmall-2 first-xsmall&quot;&gt;
+                  &lt;div class=&quot;box&quot;&gt;
+                    3
+                  &lt;/div&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            </code>
+          </pre>
+
+          <h3>.last-</h3>
+          <div class="row">
+            <div class="grid-xsmall-12">
+              <div class="box box-container">
+                <div class="row">
+                  <div class="grid-xsmall-2 last-xsmall">
+                    <div class="box-nested">1</div>
+                  </div>
+                  <div class="grid-xsmall-2">
+                    <div class="box-first">2</div>
+                  </div>
+                  <div class="grid-xsmall-2">
+                    <div class="box-first">3</div>
+                  </div>
+                  <div class="grid-xsmall-2">
+                    <div class="box-first">4</div>
+                  </div>
+                  <div class="grid-xsmall-2">
+                    <div class="box-first">5</div>
+                  </div>
+                  <div class="grid-xsmall-2">
+                    <div class="box-first">6</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <pre class="prettyprint">
+            <code class="lang-html">
+              &lt;div class=&quot;row&quot;&gt;
+                &lt;div class=&quot;grid-xsmall-2 last-xsmall&quot;&gt;
+                  &lt;div class=&quot;box&quot;&gt;
+                    1
+                  &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;grid-xsmall-2&quot;&gt;
+                  &lt;div class=&quot;box&quot;&gt;
+                    2
+                  &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;grid-xsmall-2&quot;&gt;
+                  &lt;div class=&quot;box&quot;&gt;
+                    3
+                  &lt;/div&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            </code>
+          </pre>
+        </section>
+
+        <section class="page-section">
+          <h2>Reversing</h2>
+          <h3>.reverse</h3>
+          <div class="row">
+            <div class="grid-xsmall-12">
+              <div class="box box-container">
+                <div class="row reverse">
+                  <div class="grid-xsmall-2">
+                    <div class="box-nested">1</div>
+                  </div>
+                  <div class="grid-xsmall-2">
+                    <div class="box-nested">2</div>
+                  </div>
+                  <div class="grid-xsmall-2">
+                    <div class="box-nested">3</div>
+                  </div>
+                  <div class="grid-xsmall-2">
+                    <div class="box-nested">4</div>
+                  </div>
+                  <div class="grid-xsmall-2">
+                    <div class="box-nested">5</div>
+                  </div>
+                  <div class="grid-xsmall-2">
+                    <div class="box-nested">6</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <pre class="prettyprint">
+            <code class="lang-html">
+              &lt;div class=&quot;row reverse&quot;&gt;
+                &lt;div class=&quot;grid-xsmall-2&quot;&gt;
+                  &lt;div class=&quot;box&quot;&gt;
+                    1
+                  &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;grid-xsmall-2&quot;&gt;
+                  &lt;div class=&quot;box&quot;&gt;
+                    2
+                  &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;grid-xsmall-2&quot;&gt;
+                  &lt;div class=&quot;box&quot;&gt;
+                    3
+                  &lt;/div&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            </code>
+          </pre>
+        </section>
+      </main>
+    </div>
+    <!-- build:js scripts/vendor.js -->
+    <script type="text/javascript" src="/node_modules/jquery/dist/jquery.min.js"></script>
+    <!-- endbuild -->
+    <!-- build:js scripts/main.js -->
+    <script src="scripts/main.js"></script>
+    <!-- endbuild -->
+  
+  </body>
+</html>
